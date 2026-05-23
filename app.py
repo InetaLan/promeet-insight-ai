@@ -5,6 +5,10 @@ import streamlit as st
 from promeet.pipeline import process_transcript
 from promeet.jira_mapper import to_jira_payload
 
+import sys
+
+sys.path.append(str(Path(__file__).parent / "src"))
+
 st.set_page_config(page_title="ProMeet Insight AI MVP", layout="wide")
 
 st.title("ProMeet Insight AI — MVP Demo")
