@@ -1,13 +1,12 @@
 from pathlib import Path
-import tempfile
-import streamlit as st
-
-from promeet.pipeline import process_transcript
-from promeet.jira_mapper import to_jira_payload
-
 import sys
+import tempfile
 
 sys.path.append(str(Path(__file__).parent / "src"))
+
+import streamlit as st
+from promeet.pipeline import process_transcript
+from promeet.jira_mapper import to_jira_payload
 
 st.set_page_config(page_title="ProMeet Insight AI MVP", layout="wide")
 
