@@ -13,6 +13,9 @@ st.set_page_config(page_title="ProMeet Insight AI MVP", layout="wide")
 st.title("ProMeet Insight AI — MVP Demo")
 st.caption("Transcript → AI tasks → JSON validation → Human approval → Jira-ready payload")
 
+st.logo("https://img.icons8.com/fluency/96/artificial-intelligence.png")
+st.sidebar.success("ProMeet Insight AI MVP")
+
 use_openai = st.sidebar.toggle("Use GPT-4o extraction", value=False)
 st.sidebar.info("Jei OPENAI_API_KEY nėra nustatytas, sistema naudos rule-based demo fallback.")
 
