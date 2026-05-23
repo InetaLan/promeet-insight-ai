@@ -16,7 +16,7 @@ st.caption("Transcript → AI tasks → JSON validation → Human approval → J
 st.logo("https://img.icons8.com/fluency/96/artificial-intelligence.png")
 st.sidebar.success("ProMeet Insight AI MVP")
 
-use_openai = st.sidebar.toggle("Use GPT-4o extraction", value=False)
+use_openai = st.sidebar.toggle("Use GPT-4o extraction", value=True)
 st.sidebar.info("Jei OPENAI_API_KEY nėra nustatytas, sistema naudos rule-based demo fallback.")
 
 uploaded = st.file_uploader("Įkelk MS Teams transcript .docx arba .txt", type=["docx", "txt"])
